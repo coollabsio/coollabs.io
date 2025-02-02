@@ -1,11 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Instances from "../components/Instances.svelte";
 import BigSponsors from "./big-sponsors.astro";
-import { Image } from "astro:assets";
-import codext from "../images/codext.jpg";
-import reshot from "../images/reshotai.png";
-import web3jobs from "../images/web3jobs.png";
 ---
 
 <Layout title="coolLabs">
@@ -15,67 +10,9 @@ import web3jobs from "../images/web3jobs.png";
   <h2 class="text-base pt-2 text-neutral-400 px-4">
     Applications and services built for your online safety.
   </h2>
-  <!-- <div
-    class="pb-10 pt-1 text-xs flex gap-2 gap-6 justify-center flex-row flex-wrap"
+  <div
+    class="pb-6 pt-4 text-xs flex gap-2 gap-2 justify-center flex-row flex-wrap"
   >
-    <a
-      class="hover:underline cursor-pointer text-white flex gap-2 items-center justify-center text-xs"
-      href="#features"
-    >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        class="h-4 w-4 text-warning"
-      >
-        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
-          d="M4 13a8 8 0 0 1 7 7a6 6 0 0 0 3 -5a9 9 0 0 0 6 -8a3 3 0 0 0 -3 -3a9 9 0 0 0 -8 6a6 6 0 0 0 -5 3"
-        ></path><path d="M7 14a6 6 0 0 0 -3 6a6 6 0 0 0 6 -3"></path><path
-          d="M15 9m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path></svg
-      >
-      Features</a
-    >
-    <a
-      class="hover:underline cursor-pointer text-white flex gap-2 items-center justify-center"
-      target="_blank"
-      href="https://coolify.io/docs/screenshots"
-      ><svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="w-5 h-5 text-warning"
-        viewBox="0 0 256 256"
-      >
-        <g fill="currentColor">
-          <path
-            d="M208 64h-32l-16-24H96L80 64H48a16 16 0 0 0-16 16v112a16 16 0 0 0 16 16h160a16 16 0 0 0 16-16V80a16 16 0 0 0-16-16Zm-80 104a36 36 0 1 1 36-36a36 36 0 0 1-36 36Z"
-            opacity=".2"></path>
-          <path
-            d="M208 56h-27.72l-13.63-20.44A8 8 0 0 0 160 32H96a8 8 0 0 0-6.65 3.56L75.71 56H48a24 24 0 0 0-24 24v112a24 24 0 0 0 24 24h160a24 24 0 0 0 24-24V80a24 24 0 0 0-24-24Zm8 136a8 8 0 0 1-8 8H48a8 8 0 0 1-8-8V80a8 8 0 0 1 8-8h32a8 8 0 0 0 6.66-3.56L100.28 48h55.43l13.63 20.44A8 8 0 0 0 176 72h32a8 8 0 0 1 8 8ZM128 88a44 44 0 1 0 44 44a44.05 44.05 0 0 0-44-44Zm0 72a28 28 0 1 1 28-28a28 28 0 0 1-28 28Z"
-          ></path>
-        </g>
-      </svg>Screenshots</a
-    >
-    <a
-      class="hover:underline cursor-pointer text-white flex gap-2 items-center justify-center"
-      target="_blank"
-      href="https://coolify.io/docs/videos"
-    >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="currentColor"
-        class="w-5 h-5 text-warning"
-        viewBox="0 0 256 256"
-        ><path
-          d="M200,72V184a8,8,0,0,1-8,8H32a8,8,0,0,1-8-8V72a8,8,0,0,1,8-8H192A8,8,0,0,1,200,72Z"
-          opacity="0.2"></path><path
-          d="M251.77,73a8,8,0,0,0-8.21.39L208,97.05V72a16,16,0,0,0-16-16H32A16,16,0,0,0,16,72V184a16,16,0,0,0,16,16H192a16,16,0,0,0,16-16V159l35.56,23.71A8,8,0,0,0,248,184a8,8,0,0,0,8-8V80A8,8,0,0,0,251.77,73ZM192,184H32V72H192V184Zm48-22.95-32-21.33V116.28L240,95Z"
-        ></path></svg
-      >
-      Videos</a
-    >
     <a
       class="hover:underline cursor-pointer text-white flex gap-2 items-center justify-center text-xs"
       target="_blank"
@@ -93,30 +30,29 @@ import web3jobs from "../images/web3jobs.png";
         ></path></svg
       >
 
-      Building in live-streams</a
+      Building them in live-streams</a
     >
-  </div> -->
+  </div>
   <div class="pb-2 pt-2 flex justify-center text-center gap-8 px-4">
     <div>
-      <!-- <a
-        href="/cloud"
+      <a
+        href="/projects"
         class="text-xs sm:text-base font-bold rounded p-4 px-2 text-white bg-coolgray-300 hover:bg-coolgray-400 flex gap-2 sm:w-64 justify-center"
-        ><svg
-          class="icon hidden sm:block"
-          viewBox="0 0 24 24"
+      >
+        <svg
           xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            fill="none"
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M6.657 18C4.085 18 2 15.993 2 13.517c0-2.475 2.085-4.482 4.657-4.482c.393-1.762 1.794-3.2 3.675-3.773c1.88-.572 3.956-.193 5.444 1c1.488 1.19 2.162 3.007 1.77 4.769h.99c1.913 0 3.464 1.56 3.464 3.486c0 1.927-1.551 3.487-3.465 3.487H6.657"
-          ></path>
-        </svg>Cloud</a
-      > -->
-      <div
+          class="size-6 text-pink-500"
+          fill="currentColor"
+          viewBox="0 0 256 256"
+          ><path
+            d="M184,120v61.65a8,8,0,0,1-2.34,5.65l-34.35,34.35a8,8,0,0,1-13.57-4.53L128,176ZM136,72H74.35a8,8,0,0,0-5.65,2.34L34.35,108.69a8,8,0,0,0,4.53,13.57L80,128ZM40,216c37.65,0,50.69-19.69,54.56-28.18L68.18,161.44C59.69,165.31,40,178.35,40,216Z"
+            opacity="0.2"></path><path
+            d="M223.85,47.12a16,16,0,0,0-15-15c-12.58-.75-44.73.4-71.41,27.07L132.69,64H74.36A15.91,15.91,0,0,0,63,68.68L28.7,103a16,16,0,0,0,9.07,27.16l38.47,5.37,44.21,44.21,5.37,38.49a15.94,15.94,0,0,0,10.78,12.92,16.11,16.11,0,0,0,5.1.83A15.91,15.91,0,0,0,153,227.3L187.32,193A15.91,15.91,0,0,0,192,181.64V123.31l4.77-4.77C223.45,91.86,224.6,59.71,223.85,47.12ZM74.36,80h42.33L77.16,119.52,40,114.34Zm74.41-9.45a76.65,76.65,0,0,1,59.11-22.47,76.46,76.46,0,0,1-22.42,59.16L128,164.68,91.32,128ZM176,181.64,141.67,216l-5.19-37.17L176,139.31Zm-74.16,9.5C97.34,201,82.29,224,40,224a8,8,0,0,1-8-8c0-42.29,23-57.34,32.86-61.85a8,8,0,0,1,6.64,14.56c-6.43,2.93-20.62,12.36-23.12,38.91,26.55-2.5,36-16.69,38.91-23.12a8,8,0,1,1,14.56,6.64Z"
+          ></path></svg
+        >Projects</a
+      >
+    </div>
+    <!-- <div
         class="sm:text-base text-xs sm:flex-row flex flex-col gap-1 pt-2 sm:justify-center"
       >
         Trusted by <span class="text-pink-500 mt-[0.1rem] font-bold"
@@ -126,7 +62,7 @@ import web3jobs from "../images/web3jobs.png";
           >hundreds of thousands</span
         > of self-hosted users.
       </div>
-    </div>
+    </div> -->
     <!-- <div>
       <a
         href="/self-hosted"
@@ -157,7 +93,7 @@ import web3jobs from "../images/web3jobs.png";
     Special sponsors<a
       target="_blank"
       href="https://github.com/sponsors/coollabsio/sponsorships?tier_id=334953&preview=false"
-      class="text-warning border rounded-full px-1 ml-2 border-warning cursor-pointer hover:bg-warning hover:text-black font-bold text-xs"
+      class="text-pink-500 border rounded-full px-1 ml-2 border-pink-500 cursor-pointer hover:bg-pink-500 hover:text-black font-bold text-xs"
       >?</a
     >
   </div>
