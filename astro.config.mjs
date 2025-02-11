@@ -6,6 +6,9 @@ import sitemap from "@astrojs/sitemap";
 // https://astro.build/config
 export default defineConfig({
   site: "https://coollabs.io",
+  redirects: {
+    "/projects": "/",
+  },
   vite: {
     optimizeDeps: {
       include: ['lodash.get', 'lodash.isequal', 'lodash.clonedeep']
