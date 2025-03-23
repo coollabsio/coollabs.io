@@ -9,11 +9,7 @@ export default defineConfig({
   redirects: {
     "/projects": "/",
   },
-  vite: {
-    optimizeDeps: {
-      include: ['lodash.get', 'lodash.isequal', 'lodash.clonedeep']
-    }
-  },
+
   server: {
     host: '0.0.0.0'
   },
