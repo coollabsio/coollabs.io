@@ -258,8 +258,8 @@ import Layout from "../layouts/Layout.astro";
       .then((res) => res.json())
       .then((data) => {
         const hostedEl = document.getElementById("hosted-mrr");
-        if (hostedEl && data.hosted) {
-          hostedEl.textContent = data.hosted;
+        if (hostedEl && data.mrr) {
+          hostedEl.textContent = data.mrr;
         }
       })
       .catch(() => {
