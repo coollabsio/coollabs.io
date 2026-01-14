@@ -1,11 +1,14 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import BigSponsors from "./big-sponsors.astro";
+
+const coolifyData = await fetch("https://cdn.coolify.io/business.json").then((res) => res.json());
+const cloudUsers = coolifyData["cloud-users"]?.toLocaleString() ?? "2,800";
 ---
 
 <Layout title="coolLabs">
   <h1 class="text-3xl font-bold tracking-tight text-white md:text-6xl px-4">
-    Software without compromise<span class="text-pink-500">.</span>
+    Software without compromise<span class="text-warning">.</span>
   </h1>
   <h2 class="text-base pt-2 text-neutral-400 px-4">
     Free, open source, and built for you. <svg
@@ -53,7 +56,7 @@ import BigSponsors from "./big-sponsors.astro";
         Netlify / Vercel alternative.
       </h4>
       <div class="text-xs">
-        <span class="text-warning">{(2462).toLocaleString()}+</span> users in the
+        <span class="text-warning">{cloudUsers}+</span> users in the
         cloud, and <span class="text-warning">hundreds of thousands</span>
         of self-hosted instances.
       </div>
@@ -83,7 +86,7 @@ import BigSponsors from "./big-sponsors.astro";
         per month.
       </div>
     </a>
-    <a
+    <!-- <a
       href="https://jata.app?ref=coollabs"
       class="flex flex-col gap-2 hover:bg-white/10 hover:scale-105 p-4 transition-all duration-300 cursor-pointer border-l-2 border-pink-500"
     >
@@ -104,6 +107,6 @@ import BigSponsors from "./big-sponsors.astro";
       <div class="text-xs">
         Work in <span class="text-green-500">progress</span>.
       </div>
-    </a>
+    </a> -->
   </div>
 </Layout>

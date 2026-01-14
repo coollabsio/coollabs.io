@@ -4,7 +4,7 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout title="Our Philosophy | coolLabs">
   <h1 class="text-3xl font-bold tracking-tight text-white md:text-6xl px-4">
-    Our Open Source Philosophy<span class="text-pink-500">.</span>
+    Our Open Source Philosophy<span class="text-warning">.</span>
   </h1>
   <h2 class="text-base pb-10 pt-2 text-neutral-400 px-4">
     Software should be free and accessible to everyone.
@@ -26,7 +26,7 @@ import Layout from "../layouts/Layout.astro";
   <h3
     class="text-xl font-bold tracking-tight text-white md:text-3xl pt-16 px-4"
   >
-    What This Means<span class="text-pink-500">.</span>
+    What This Means<span class="text-warning">.</span>
   </h3>
   <h4 class="text-base pb-10 pt-2 text-neutral-400 px-4">
     Our commitments to the community.
@@ -36,7 +36,7 @@ import Layout from "../layouts/Layout.astro";
     <ul role="list" class="mt-8 space-y-8 text-neutral-400 text-left">
       <li class="flex gap-x-3">
         <svg
-          class="mt-0 h-6 w-6 flex-none text-pink-500"
+          class="mt-0 h-6 w-6 flex-none text-warning"
           viewBox="0 0 20 20"
           fill="currentColor"
           aria-hidden="true"
@@ -47,7 +47,7 @@ import Layout from "../layouts/Layout.astro";
             clip-rule="evenodd"></path>
         </svg>
         <span
-          ><strong class="font-semibold text-pink-500"
+          ><strong class="font-semibold text-warning"
             >Free and Open Source.</strong
           > Every project we build is 100% open source. You can view the code, modify
           it, learn from it, and use it however you want.
@@ -55,7 +55,7 @@ import Layout from "../layouts/Layout.astro";
       </li>
       <li class="flex gap-x-3">
         <svg
-          class="mt-0 h-6 w-6 flex-none text-pink-500"
+          class="mt-0 h-6 w-6 flex-none text-warning"
           viewBox="0 0 20 20"
           fill="currentColor"
           aria-hidden="true"
@@ -66,7 +66,7 @@ import Layout from "../layouts/Layout.astro";
             clip-rule="evenodd"></path>
         </svg>
         <span
-          ><strong class="font-semibold text-pink-500"
+          ><strong class="font-semibold text-warning"
             >No Features Behind Paywalls.</strong
           > Every feature we develop goes into the open-source version. There's no
           "enterprise edition" with the good stuff locked away. What you see is what
@@ -75,7 +75,7 @@ import Layout from "../layouts/Layout.astro";
       </li>
       <li class="flex gap-x-3">
         <svg
-          class="mt-0 h-6 w-6 flex-none text-pink-500"
+          class="mt-0 h-6 w-6 flex-none text-warning"
           viewBox="0 0 20 20"
           fill="currentColor"
           aria-hidden="true"
@@ -86,7 +86,7 @@ import Layout from "../layouts/Layout.astro";
             clip-rule="evenodd"></path>
         </svg>
         <span
-          ><strong class="font-semibold text-pink-500">Apache License.</strong> We
+          ><strong class="font-semibold text-warning">Apache License.</strong> We
           use the Apache 2.0 license, which gives you the freedom to use our software
           for any purpose. However, we kindly ask that you don't commercially redistribute
           our work as your own product. The license allows it, but we'd appreciate
@@ -95,7 +95,7 @@ import Layout from "../layouts/Layout.astro";
       </li>
       <li class="flex gap-x-3">
         <svg
-          class="mt-0 h-6 w-6 flex-none text-pink-500"
+          class="mt-0 h-6 w-6 flex-none text-warning"
           viewBox="0 0 20 20"
           fill="currentColor"
           aria-hidden="true"
@@ -106,7 +106,7 @@ import Layout from "../layouts/Layout.astro";
             clip-rule="evenodd"></path>
         </svg>
         <span
-          ><strong class="font-semibold text-pink-500">Forever Free.</strong> This
+          ><strong class="font-semibold text-warning">Forever Free.</strong> This
           isn't a temporary strategy or a growth hack. This is how we believe software
           should be made. These principles will never change.
         </span>
@@ -117,7 +117,7 @@ import Layout from "../layouts/Layout.astro";
   <h3
     class="text-xl font-bold tracking-tight text-white md:text-3xl pt-16 px-4"
   >
-    How We Sustain Development<span class="text-pink-500">.</span>
+    How We Sustain Development<span class="text-warning">.</span>
   </h3>
   <h4 class="text-base pb-10 pt-2 text-neutral-400 px-4">
     Because we still need to pay the bills.
@@ -128,11 +128,11 @@ import Layout from "../layouts/Layout.astro";
       Making software free doesn't mean development is free. We sustain our work
       through two main channels:
       <br /><br />
-      <strong class="text-pink-500">Community Donations.</strong> If you find our
+      <strong class="text-warning">Community Donations.</strong> If you find our
       projects valuable, you can support us through GitHub Sponsors or Open Collective.
       Every contribution helps us dedicate more time to development and support.
       <br /><br />
-      <strong class="text-pink-500">Hosted Services.</strong> For those who prefer
+      <strong class="text-warning">Hosted Services.</strong> For those who prefer
       not to self-host, we offer managed cloud versions of our software. You get
       the same features, we handle the infrastructure, and the revenue helps fund
       continued development.
@@ -195,7 +195,7 @@ import Layout from "../layouts/Layout.astro";
   <h3
     class="text-xl font-bold tracking-tight text-white md:text-3xl pt-16 px-4"
   >
-    Where We Are Today<span class="text-pink-500">.</span>
+    Where We Are Today<span class="text-warning">.</span>
   </h3>
   <h4 class="text-base pb-10 pt-2 text-neutral-400 px-4">
     Transparency in numbers.
@@ -257,7 +257,7 @@ import Layout from "../layouts/Layout.astro";
       .then((data) => {
         const hostedEl = document.getElementById("hosted-mrr");
         if (hostedEl && data.mrr) {
-          hostedEl.textContent = data.mrr;
+          hostedEl.textContent = Math.round(data.mrr / 1000);
         }
       })
       .catch(() => {
