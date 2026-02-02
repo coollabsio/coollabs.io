@@ -9,7 +9,7 @@ import BigSponsors from "./big-sponsors.astro";
   </h1>
   <h2 class="text-base pt-2 text-neutral-400 px-4">
     Free, open source, and built for you. <svg
-      class="w-6 h-6 inline-block"
+      class="w-5 h-5 inline-block -mt-0.5"
       viewBox="0 0 36 36"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -19,93 +19,79 @@ import BigSponsors from "./big-sponsors.astro";
       ></path>
     </svg>
   </h2>
-  <div
-    class="pb-6 pt-4 text-xs flex gap-2 gap-2 justify-center flex-row flex-wrap"
-  >
+  <div class="pb-10 pt-3 flex justify-center">
     <a
-      class="hover:underline cursor-pointer text-white flex gap-2 items-center justify-center text-xs"
+      class="text-neutral-500 hover:text-neutral-300 flex gap-2 items-center text-xs transition-colors"
       target="_blank"
       href="https://twitch.tv/heyandras"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         class="h-4 w-4 text-purple-500"
-        width="200"
-        height="200"
         viewBox="0 0 24 24"
         ><path
           fill="currentColor"
           d="M11.571 4.714h1.715v5.143H11.57zm4.715 0H18v5.143h-1.714zM6 0L1.714 4.286v15.428h5.143V24l4.286-4.286h3.428L22.286 12V0zm14.571 11.143l-3.428 3.428h-3.429l-3 3v-3H6.857V1.714h13.714Z"
         ></path></svg
       >
-
       Building them in live-streams</a
     >
   </div>
-  <div class="pb-2 flex flex-col gap-8 px-4 text-white text-left">
-    <a
-      href="https://coolify.io?ref=coollabs"
-      class="flex flex-col gap-2 hover:bg-white/10 hover:scale-105 p-4 transition-all duration-300 cursor-pointer border-l-2 border-warning"
-    >
-      <h3 class="md:text-5xl text-3xl font-bold">Coolify</h3>
-      <h4 class="md:text-xl text-sm">
-        Self-hosting with superpowers. An open-source & self-hostable Heroku /
-        Netlify / Vercel alternative.
-      </h4>
-      <div class="text-xs">
-        <span class="text-warning"><span id="cloud-users">...</span>+</span> users in the cloud, and <span
-          class="text-warning">hundreds of thousands</span
-        >
-        of self-hosted instances.
-      </div>
-    </a>
-    <a
-      href="https://serverlesshorrors.com?ref=coollabs"
-      class="flex flex-col gap-2 hover:bg-white/10 hover:scale-105 p-4 transition-all duration-300 cursor-pointer border-l-2 border-orange-500"
-    >
-      <h3 class="md:text-5xl text-3xl font-bold">Serverless Horrors</h3>
-      <h4 class="md:text-xl text-sm">
-        A simple blog where you can read all the horror stories of serverless.
-      </h4>
-      <div class="text-xs">
-        Scary. <span class="text-orange-500">Yikes!</span>
-      </div>
-    </a>
-    <a
-      href="https://fonts.coollabs.io?ref=coollabs"
-      class="flex flex-col gap-2 hover:bg-white/10 hover:scale-105 p-4 transition-all duration-300 cursor-pointer border-l-2 border-blue-500"
-    >
-      <h3 class="md:text-5xl text-3xl font-bold">Fonts</h3>
-      <h4 class="md:text-xl text-sm">
-        A privacy-friendly drop-in replacement for Google Fonts.
-      </h4>
-      <div class="text-xs">
-        <span class="text-blue-500">{(7).toLocaleString()}+</span> million requests
-        per month.
-      </div>
-    </a>
-    <!-- <a
-      href="https://jata.app?ref=coollabs"
-      class="flex flex-col gap-2 hover:bg-white/10 hover:scale-105 p-4 transition-all duration-300 cursor-pointer border-l-2 border-pink-500"
-    >
-      <h3 class="md:text-5xl text-3xl font-bold">Jata</h3>
-      <h4 class="md:text-xl text-sm">Just Another Todo App, nothing more.</h4>
-      <div class="text-xs">
-        It is <span class="text-pink-500">just</span> a todo app.
-      </div>
-    </a>
-    <a
-      href="https://safetyper.com?ref=coollabs"
-      class="flex flex-col gap-2 hover:bg-white/10 hover:scale-105 p-4 transition-all duration-300 cursor-pointer border-l-2 border-green-500"
-    >
-      <h3 class="md:text-5xl text-3xl font-bold">Safetyper</h3>
-      <h4 class="md:text-xl text-sm">
-        A Grammarly alternative, where YOU own what you type on your keyboard.
-      </h4>
-      <div class="text-xs">
-        Work in <span class="text-green-500">progress</span>.
-      </div>
-    </a> -->
+
+  <div class="max-w-2xl mx-auto w-full px-4 text-left">
+    <div class="divide-y divide-coolgray-400 pb-8">
+      <a
+        href="https://coolify.io?ref=coollabs"
+        class="group block py-6 first:pt-0 last:pb-0"
+      >
+        <div class="flex items-baseline justify-between gap-4 mb-1">
+          <h3 class="text-xl md:text-2xl font-bold text-white group-hover:text-warning transition-colors">Coolify</h3>
+          <svg class="w-4 h-4 text-neutral-600 group-hover:text-warning transition-colors flex-shrink-0 translate-y-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+          </svg>
+        </div>
+        <p class="text-sm text-neutral-400 mb-2">
+          Self-hosting with superpowers. An open-source & self-hostable Heroku /
+          Netlify / Vercel alternative.
+        </p>
+        <span class="text-xs text-neutral-500">
+          <span class="text-warning/80">Thousands</span> of cloud users &middot; <span class="text-warning/80">hundreds of thousands</span> of self-hosted instances
+        </span>
+      </a>
+
+      <a
+        href="https://serverlesshorrors.com?ref=coollabs"
+        class="group block py-6 first:pt-0 last:pb-0"
+      >
+        <div class="flex items-baseline justify-between gap-4 mb-1">
+          <h3 class="text-xl md:text-2xl font-bold text-white group-hover:text-warning transition-colors">Serverless Horrors</h3>
+          <svg class="w-4 h-4 text-neutral-600 group-hover:text-warning transition-colors flex-shrink-0 translate-y-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+          </svg>
+        </div>
+        <p class="text-sm text-neutral-400">
+          A simple blog where you can read all the horror stories of serverless.
+        </p>
+      </a>
+
+      <a
+        href="https://fonts.coollabs.io?ref=coollabs"
+        class="group block py-6 first:pt-0 last:pb-0"
+      >
+        <div class="flex items-baseline justify-between gap-4 mb-1">
+          <h3 class="text-xl md:text-2xl font-bold text-white group-hover:text-warning transition-colors">Fonts</h3>
+          <svg class="w-4 h-4 text-neutral-600 group-hover:text-warning transition-colors flex-shrink-0 translate-y-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+          </svg>
+        </div>
+        <p class="text-sm text-neutral-400 mb-2">
+          A privacy-friendly drop-in replacement for Google Fonts.
+        </p>
+        <span class="text-xs text-neutral-500">
+          <span class="text-warning/80">{(7).toLocaleString()}+</span> million requests per month
+        </span>
+      </a>
+    </div>
   </div>
 
   <script>
@@ -114,7 +100,8 @@ import BigSponsors from "./big-sponsors.astro";
       .then((data) => {
         const cloudUsersEl = document.getElementById("cloud-users");
         if (cloudUsersEl && data["coolify-cloud-users"]) {
-          cloudUsersEl.textContent = data["coolify-cloud-users"].toLocaleString();
+          cloudUsersEl.textContent =
+            data["coolify-cloud-users"].toLocaleString();
         }
       })
       .catch(() => {
