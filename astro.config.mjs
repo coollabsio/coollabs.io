@@ -8,6 +8,7 @@ export default defineConfig({
   site: "https://coollabs.io",
   redirects: {
     "/projects": "/",
+    "/s": "/sponsorships",
   },
 
   server: {
