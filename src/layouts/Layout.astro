@@ -9,7 +9,7 @@ const { title } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
@@ -84,7 +84,7 @@ const { title } = Astro.props;
     />
     <title>{title}</title>
   </head>
-  <body class="min-h-screen flex flex-col">
+  <body class="min-h-screen flex flex-col antialiased leading-relaxed">
     <header
       class="sticky top-0 z-50 bg-[rgba(16,16,16,0.8)] backdrop-blur-[12px] border-b border-[rgba(36,36,36,0.5)]"
     >
@@ -365,6 +365,22 @@ const { title } = Astro.props;
     <style is:global>
       html {
         font-family: "Inter", sans-serif;
+        background-color: #101010;
+        color: #fff;
+      }
+      html[data-theme="dark"] {
+        --color-primary: oklch(49.65% 0.2710 289.34);
+        --color-secondary: oklch(52.34% 0.2871 289.16);
+        --color-accent: oklch(87.90% 0.1533 91.61);
+        --color-neutral: oklch(26.03% 0.0000 263.28);
+        --color-base-100: oklch(17.30% 0.0000 263.28);
+        --color-base-200: oklch(20.90% 0.0000 263.28);
+        --color-base-300: oklch(24.35% 0.0000 263.28);
+        --color-base-content: oklch(100% 0 0);
+        --color-info: oklch(54.61% 0.2153 262.89);
+        --color-success: oklch(62.70% 0.1699 149.23);
+        --color-warning: oklch(87.90% 0.1533 91.61);
+        --color-error: oklch(57.71% 0.2151 27.32);
       }
       .navbar-link {
         @apply text-white text-sm sm:text-base hover:bg-coolgray-200 p-2 px-3 rounded flex items-center gap-2;
