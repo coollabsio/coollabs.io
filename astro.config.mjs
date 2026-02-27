@@ -6,6 +6,10 @@ import sitemap from "@astrojs/sitemap";
 // https://astro.build/config
 export default defineConfig({
   site: "https://coollabs.io",
+  trailingSlash: "never",
+  build: {
+    format: "file",
+  },
   redirects: {
     "/projects": "/",
     "/s": "/sponsorships",
