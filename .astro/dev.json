@@ -1,0 +1,24 @@
+{
+	"pid": 2046271,
+	"port": 4321,
+	"url": "http://localhost:4321",
+	"urls": {
+		"local": [
+			"http://localhost:4321/"
+		],
+		"network": [
+			"http://192.168.1.99:4321/",
+			"http://100.110.234.18:4321/",
+			"http://172.17.0.1:4321/",
+			"http://172.18.0.1:4321/"
+		],
+		"networkInterfaceNames": [
+			"enp2s0",
+			"tailscale0",
+			"docker0",
+			"br-deac977eac93"
+		]
+	},
+	"background": false,
+	"startedAt": "2026-09-16T09:13:56.569Z"
+}
