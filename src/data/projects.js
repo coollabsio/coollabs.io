@@ -99,8 +99,8 @@ export const more = [
       {
         src: "/images/screenshots/fonts.webp",
         title: "Privacy for your visitors",
-        text: "Change one domain in your head tags and your fonts load without tracking.",
-        alt: "coolLabs Fonts homepage showing how to replace fonts.googleapis.com with api.fonts.coollabs.io",
+        text: "Same fonts, same API, without logging anything about your visitors. Change one domain in your head tags.",
+        alt: "coolLabs Fonts homepage with a code diff that replaces fonts.googleapis.com with api.fonts.coollabs.io",
       },
     ],
   },
