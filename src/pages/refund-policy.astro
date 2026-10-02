@@ -1,19 +1,27 @@
 ---
 import Layout from "../layouts/Layout.astro";
+
+const link =
+  "text-fg underline decoration-fg-faint underline-offset-2 transition-colors hover:decoration-fg";
 ---
 
 <Layout title="Refund Policy | coolLabs">
-  <h1 class="text-3xl font-bold tracking-tight text-white md:text-6xl px-4">
-    Refund Policy<span class="text-warning">.</span>
+  <h1 class="px-4 text-4xl font-semibold tracking-tight text-balance text-fg md:text-5xl">
+    Refund policy<span class="text-warning">.</span>
   </h1>
-  <h2 class="text-base pb-10 pt-2 text-neutral-400 px-4">
+  <p class="mx-auto mt-4 max-w-2xl px-4 text-base text-pretty text-fg-dim">
     Our commitment to your satisfaction.
-  </h2>
+  </p>
 
-  <div class="max-w-2xl mx-auto px-4 pb-8">
-    <div class="text-left text-neutral-400">
-      <p class="mb-2">
-        <strong class="text-warning">Effective Date</strong>: July 3, 2023
+  <article
+    class="mx-auto mt-16 max-w-3xl px-4 pb-16 text-left text-[15px] leading-7 text-fg-dim
+    [&_h2]:mt-12 [&_h2]:text-xl [&_h2]:font-semibold [&_h2]:tracking-tight [&_h2]:text-fg
+    [&_p]:mt-3 [&_strong]:font-medium [&_strong]:text-fg
+    [&_ul]:mt-3 [&_ul]:list-disc [&_ul]:space-y-1.5 [&_ul]:pl-5
+    [&_ol]:mt-3 [&_ol]:list-decimal [&_ol]:space-y-1.5 [&_ol]:pl-5 [&_li]:marker:text-fg-faint"
+  >
+      <p class="!mt-0 mb-6 border-b border-hairline pb-6 text-xs text-fg-faint">
+        Effective Date: July 3, 2023
       </p>
       <p>
         At coolLabs Solutions Kft. ("we", "us", or "our"), we strive to ensure
@@ -21,94 +29,77 @@ import Layout from "../layouts/Layout.astro";
         your purchase, we offer a 30-day refund policy under the following
         terms:
       </p>
-      <p class="mt-4">
+      <p>
         Our products may include links to external sites not operated by us.
         Please be aware that we have no control over their content or privacy
         practices, and this policy does not apply to them.
       </p>
 
-      <h3
-        class="text-xl font-bold tracking-tight text-white md:text-2xl pt-12 pb-4"
-      >
-        Eligibility<span class="text-warning">.</span>
-      </h3>
-      <ul class="list-disc ml-6">
-        <li class="mb-2">
-          <strong class="text-warning">Timeframe</strong>: Refund requests must
+      <h2>Eligibility</h2>
+      <ul>
+        <li>
+          <strong>Timeframe</strong>: Refund requests must
           be submitted within 30 calendar days from the date of purchase.
         </li>
-        <li class="mb-2">
-          <strong class="text-warning">Services Covered</strong>: This policy
+        <li>
+          <strong>Services Covered</strong>: This policy
           applies to all paid Coollabs services, including subscriptions to
           Coolify, Fonts, or other hosted solutions.
         </li>
-        <li class="mb-2">
-          <strong class="text-warning">Usage</strong>: Refunds are eligible for
+        <li>
+          <strong>Usage</strong>: Refunds are eligible for
           accounts without any usage limitation.
         </li>
       </ul>
 
-      <h3
-        class="text-xl font-bold tracking-tight text-white md:text-2xl pt-12 pb-4"
-      >
-        Non-Eligible Cases<span class="text-warning">.</span>
-      </h3>
-      <p class="mb-4">Refunds will not be granted for:</p>
-      <ul class="list-disc ml-6">
-        <li class="mb-2">
+      <h2>Non-eligible cases</h2>
+      <p>Refunds will not be granted for:</p>
+      <ul>
+        <li>
           Violations of our Terms of Service (e.g., misuse of resources).
         </li>
-        <li class="mb-2">
+        <li>
           Requests submitted after the 30-day period.
         </li>
       </ul>
 
-      <h3
-        class="text-xl font-bold tracking-tight text-white md:text-2xl pt-12 pb-4"
-      >
-        Refund Process<span class="text-warning">.</span>
-      </h3>
-      <ol class="list-decimal ml-6">
-        <li class="mb-2">
-          <strong class="text-warning">Submit a Request</strong>: Contact our
+      <h2>Refund process</h2>
+      <ol>
+        <li>
+          <strong>Submit a Request</strong>: Contact our
           support team at hi [(at]) coollabs.io with your account details and
           reason for the refund request.
         </li>
-        <li class="mb-2">
-          <strong class="text-warning">Review</strong>: We will review your
+        <li>
+          <strong>Review</strong>: We will review your
           request within 5 business days to confirm eligibility.
         </li>
-        <li class="mb-2">
-          <strong class="text-warning">Processing</strong>: Approved refunds
+        <li>
+          <strong>Processing</strong>: Approved refunds
           will be processed to the original payment method within 10 business
           days. Refunds will exclude any transaction fees charged by payment
           processors.
         </li>
       </ol>
 
-      <h3
-        class="text-xl font-bold tracking-tight text-white md:text-2xl pt-12 pb-4"
-      >
-        Contact Us<span class="text-warning">.</span>
-      </h3>
+      <h2>Contact us</h2>
       <p>Questions or want to request a refund? Reach out to us:</p>
-      <ul class="list-none mt-2">
+      <ul class="!list-none !pl-0">
         <li>
-          <strong class="text-warning">Email</strong>: hi [(at])
+          <strong>Email</strong>: hi [(at])
           coollabs.io
         </li>
         <li>
-          <strong class="text-warning">More Info</strong>:
+          <strong>More Info</strong>:
           <a
             href="https://coolify.io/docs/contact"
-            class="text-warning hover:underline">https://coolify.io/docs/contact</a
+            class={link}>https://coolify.io/docs/contact</a
           >
         </li>
       </ul>
-      <p class="mt-4">
+      <p>
         coolLabs reserves the right to modify this refund policy at any time.
         Changes will be posted on this page with an updated effective date.
       </p>
-    </div>
-  </div>
+  </article>
 </Layout>

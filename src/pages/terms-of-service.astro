@@ -1,19 +1,27 @@
 ---
 import Layout from "../layouts/Layout.astro";
+
+const link =
+  "text-fg underline decoration-fg-faint underline-offset-2 transition-colors hover:decoration-fg";
 ---
 
 <Layout title="Terms of Service | coolLabs">
-  <h1 class="text-3xl font-bold tracking-tight text-white md:text-6xl px-4">
-    Terms of Service<span class="text-warning">.</span>
+  <h1 class="px-4 text-4xl font-semibold tracking-tight text-balance text-fg md:text-5xl">
+    Terms of service<span class="text-warning">.</span>
   </h1>
-  <h2 class="text-base pb-10 pt-2 text-neutral-400 px-4">
+  <p class="mx-auto mt-4 max-w-2xl px-4 text-base text-pretty text-fg-dim">
     Rules for using our services.
-  </h2>
+  </p>
 
-  <div class="max-w-2xl mx-auto px-4 pb-8">
-    <div class="text-left text-neutral-400">
-      <p class="mb-2">
-        <strong class="text-warning">Last Updated</strong>: March 23, 2025
+  <article
+    class="mx-auto mt-16 max-w-3xl px-4 pb-16 text-left text-[15px] leading-7 text-fg-dim
+    [&_h2]:mt-12 [&_h2]:text-xl [&_h2]:font-semibold [&_h2]:tracking-tight [&_h2]:text-fg
+    [&_p]:mt-3 [&_strong]:font-medium [&_strong]:text-fg
+    [&_ul]:mt-3 [&_ul]:list-disc [&_ul]:space-y-1.5 [&_ul]:pl-5
+    [&_ol]:mt-3 [&_ol]:list-decimal [&_ol]:space-y-1.5 [&_ol]:pl-5 [&_li]:marker:text-fg-faint"
+  >
+      <p class="!mt-0 mb-6 border-b border-hairline pb-6 text-xs text-fg-faint">
+        Last Updated: March 23, 2025
       </p>
       <p>
         These Terms of Service ("Terms") govern your use of the services and
@@ -23,53 +31,41 @@ import Layout from "../layouts/Layout.astro";
         other services we may launch.
       </p>
 
-      <h3
-        class="text-xl font-bold tracking-tight text-white md:text-2xl pt-12 pb-4"
-      >
-        Acceptance of Terms<span class="text-warning">.</span>
-      </h3>
+      <h2>Acceptance of terms</h2>
       <p>
         By accessing or using our products, you agree to be bound by these
         Terms. If you do not agree with any part of these Terms, you must stop
         using our products immediately.
       </p>
 
-      <h3
-        class="text-xl font-bold tracking-tight text-white md:text-2xl pt-12 pb-4"
-      >
-        Our Services<span class="text-warning">.</span>
-      </h3>
+      <h2>Our services</h2>
       <p>We develop and maintain open-source products, including:</p>
-      <ul class="list-disc ml-6 mt-2">
+      <ul>
         <li>
-          <strong class="text-warning">Coolify</strong>: A self-hosting platform
+          <strong>Coolify</strong>: A self-hosting platform
           for deploying applications, databases, and services
         </li>
         <li>
-          <strong class="text-warning">Jean</strong>: An AI-powered development
+          <strong>Jean</strong>: An AI-powered development
           tool
         </li>
         <li>
-          <strong class="text-warning">Fonts</strong>: A privacy-friendly Google
+          <strong>Fonts</strong>: A privacy-friendly Google
           Fonts replacement
         </li>
         <li>
-          <strong class="text-warning">Other products</strong>: Any additional
+          <strong>Other products</strong>: Any additional
           services available through our domains
         </li>
       </ul>
-      <p class="mt-2">
+      <p>
         We reserve the right to modify, suspend, or discontinue any part of our
         products at any time without prior notice.
       </p>
 
-      <h3
-        class="text-xl font-bold tracking-tight text-white md:text-2xl pt-12 pb-4"
-      >
-        User Accounts<span class="text-warning">.</span>
-      </h3>
+      <h2>User accounts</h2>
       <p>When you create an account with us, you agree to:</p>
-      <ul class="list-disc ml-6 mt-2">
+      <ul>
         <li>Provide accurate and complete information</li>
         <li>Keep your login credentials secure and confidential</li>
         <li>
@@ -78,13 +74,9 @@ import Layout from "../layouts/Layout.astro";
         <li>Notify us immediately of any unauthorized use of your account</li>
       </ul>
 
-      <h3
-        class="text-xl font-bold tracking-tight text-white md:text-2xl pt-12 pb-4"
-      >
-        Acceptable Use<span class="text-warning">.</span>
-      </h3>
+      <h2>Acceptable use</h2>
       <p>You agree not to use our products to:</p>
-      <ul class="list-disc ml-6 mt-2">
+      <ul>
         <li>Violate any applicable laws or regulations</li>
         <li>Infringe on the rights of others</li>
         <li>
@@ -102,90 +94,66 @@ import Layout from "../layouts/Layout.astro";
         <li>Distribute malware, spam, or other harmful content</li>
       </ul>
 
-      <h3
-        class="text-xl font-bold tracking-tight text-white md:text-2xl pt-12 pb-4"
-      >
-        Intellectual Property<span class="text-warning">.</span>
-      </h3>
+      <h2>Intellectual property</h2>
       <p>
         Our products are primarily open-source and released under their
         respective licenses (e.g., Apache 2.0, MIT). You are free to use,
         modify, and distribute the source code in accordance with those
         licenses.
       </p>
-      <p class="mt-4">
+      <p>
         The coolLabs name, logos, branding, and trademarks remain the property
         of coolLabs Solutions Kft. and may not be used without our prior written
         consent.
       </p>
 
-      <h3
-        class="text-xl font-bold tracking-tight text-white md:text-2xl pt-12 pb-4"
-      >
-        Payment & Refunds<span class="text-warning">.</span>
-      </h3>
+      <h2>Payment & refunds</h2>
       <p>
         Some of our products offer paid features or subscriptions. By purchasing
         a paid plan, you agree to pay the fees listed at the time of purchase.
         All payments are processed securely through third-party payment
         providers.
       </p>
-      <p class="mt-4">
+      <p>
         For details on refunds, please refer to our
-        <a href="/refund-policy" class="text-warning hover:underline"
+        <a href="/refund-policy" class={link}
           >Refund Policy</a
         >.
       </p>
 
-      <h3
-        class="text-xl font-bold tracking-tight text-white md:text-2xl pt-12 pb-4"
-      >
-        Limitation of Liability<span class="text-warning">.</span>
-      </h3>
+      <h2>Limitation of liability</h2>
       <p>
         We work hard to keep our products reliable, secure, and available.
         However, no software is perfect — bugs happen, servers hiccup, and
         things occasionally break. We can't promise 100% uptime or a
         completely error-free experience, but we're always working to improve.
       </p>
-      <p class="mt-4">
+      <p>
         If something does go wrong, our responsibility is limited to
         refunding what you paid us in the last month. We're a small team
         building open-source software, and this helps us keep doing that.
       </p>
 
-      <h3
-        class="text-xl font-bold tracking-tight text-white md:text-2xl pt-12 pb-4"
-      >
-        Termination<span class="text-warning">.</span>
-      </h3>
+      <h2>Termination</h2>
       <p>
         We may suspend or terminate your access to our products at any time if
         you violate these Terms, without prior notice. You may stop using our
         products at any time by deleting your account.
       </p>
-      <p class="mt-4">
+      <p>
         Upon termination, your right to use our products ceases immediately. Any
         provisions of these Terms that by their nature should survive
         termination will remain in effect.
       </p>
 
-      <h3
-        class="text-xl font-bold tracking-tight text-white md:text-2xl pt-12 pb-4"
-      >
-        Governing Law<span class="text-warning">.</span>
-      </h3>
+      <h2>Governing law</h2>
       <p>
         These Terms are governed by the laws of Hungary. Any disputes arising
         from or relating to these Terms or our products shall be resolved in the
         courts of Hungary.
       </p>
 
-      <h3
-        class="text-xl font-bold tracking-tight text-white md:text-2xl pt-12 pb-4"
-      >
-        Changes to These Terms<span class="text-warning">.</span>
-      </h3>
+      <h2>Changes to these terms</h2>
       <p>
         We may update these Terms from time to time. Updated versions will be
         posted on this page and we will notify you via email or within our
@@ -193,29 +161,24 @@ import Layout from "../layouts/Layout.astro";
         you accept the updated Terms.
       </p>
 
-      <h3
-        class="text-xl font-bold tracking-tight text-white md:text-2xl pt-12 pb-4"
-      >
-        Contact Us<span class="text-warning">.</span>
-      </h3>
+      <h2>Contact us</h2>
       <p>Questions about these Terms? Reach out to us:</p>
-      <ul class="list-none mt-2">
+      <ul class="!list-none !pl-0">
         <li>
-          <strong class="text-warning">Email</strong>: hi [(at])
+          <strong>Email</strong>: hi [(at])
           coollabs.io
         </li>
         <li>
-          <strong class="text-warning">More Info</strong>:
+          <strong>More Info</strong>:
           <a
             href="https://coolify.io/docs/contact"
-            class="text-warning hover:underline">https://coolify.io/docs/contact</a
+            class={link}>https://coolify.io/docs/contact</a
           >
         </li>
       </ul>
 
-      <p class="mt-8">
+      <p class="!mt-12 border-t border-hairline pt-6 text-fg-faint">
         By using our products, you agree to these Terms of Service.
       </p>
-    </div>
-  </div>
+  </article>
 </Layout>

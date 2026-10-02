@@ -1,19 +1,27 @@
 ---
 import Layout from "../layouts/Layout.astro";
+
+const link =
+  "text-fg underline decoration-fg-faint underline-offset-2 transition-colors hover:decoration-fg";
 ---
 
 <Layout title="Privacy Policy | coolLabs">
-  <h1 class="text-3xl font-bold tracking-tight text-white md:text-6xl px-4">
-    Privacy Policy<span class="text-warning">.</span>
+  <h1 class="px-4 text-4xl font-semibold tracking-tight text-balance text-fg md:text-5xl">
+    Privacy policy<span class="text-warning">.</span>
   </h1>
-  <h2 class="text-base pb-10 pt-2 text-neutral-400 px-4">
+  <p class="mx-auto mt-4 max-w-2xl px-4 text-base text-pretty text-fg-dim">
     How we handle your data.
-  </h2>
+  </p>
 
-  <div class="max-w-2xl mx-auto px-4 pb-8">
-    <div class="text-left text-neutral-400">
-      <p class="mb-2">
-        <strong class="text-warning">Last Updated</strong>: March 23, 2025
+  <article
+    class="mx-auto mt-16 max-w-3xl px-4 pb-16 text-left text-[15px] leading-7 text-fg-dim
+    [&_h2]:mt-12 [&_h2]:text-xl [&_h2]:font-semibold [&_h2]:tracking-tight [&_h2]:text-fg
+    [&_p]:mt-3 [&_strong]:font-medium [&_strong]:text-fg
+    [&_ul]:mt-3 [&_ul]:list-disc [&_ul]:space-y-1.5 [&_ul]:pl-5
+    [&_ol]:mt-3 [&_ol]:list-decimal [&_ol]:space-y-1.5 [&_ol]:pl-5 [&_li]:marker:text-fg-faint"
+  >
+      <p class="!mt-0 mb-6 border-b border-hairline pb-6 text-xs text-fg-faint">
+        Last Updated: March 23, 2025
       </p>
       <p>
         At coolLabs Solutions Kft. ("we", "us", or "our"), we create services
@@ -24,63 +32,47 @@ import Layout from "../layouts/Layout.astro";
         platforms. We are committed to not transferring your data to any external
         company unless required by law.
       </p>
-      <p class="mt-4">
+      <p>
         Our products may include links to external sites not operated by us.
         Please be aware that we have no control over their content or privacy
         practices, and this policy does not apply to them.
       </p>
 
-      <h3
-        class="text-xl font-bold tracking-tight text-white md:text-2xl pt-12 pb-4"
-      >
-        What Information We Collect<span class="text-warning">.</span>
-      </h3>
+      <h2>What information we collect</h2>
       <p>
         To make our products functional, we collect only the following basic
         information during registration:
       </p>
-      <ul class="list-disc ml-6 mt-2">
+      <ul>
         <li>Your email address</li>
       </ul>
-      <p class="mt-2">
+      <p>
         We don't collect anything beyond what's necessary for our services, and
         we anonymize data whenever technically possible.
       </p>
 
-      <h3
-        class="text-xl font-bold tracking-tight text-white md:text-2xl pt-12 pb-4"
-      >
-        How We Use Your Information<span class="text-warning">.</span>
-      </h3>
+      <h2>How we use your information</h2>
       <p>We use your email address to:</p>
-      <ul class="list-disc ml-6 mt-2">
+      <ul>
         <li>Create and manage your account</li>
         <li>Communicate with you about your account or our services</li>
         <li>Send optional updates or promotions (only with your consent)</li>
       </ul>
 
-      <h3
-        class="text-xl font-bold tracking-tight text-white md:text-2xl pt-12 pb-4"
-      >
-        Legal Basis for Processing<span class="text-warning">.</span>
-      </h3>
+      <h2>Legal basis for processing</h2>
       <p>We process your email address based on:</p>
-      <ul class="list-disc ml-6 mt-2">
+      <ul>
         <li>
-          <strong class="text-warning">Consent</strong>: You agree to this when
+          <strong>Consent</strong>: You agree to this when
           you register, and you can withdraw consent anytime
         </li>
         <li>
-          <strong class="text-warning">Contract</strong>: It's necessary to
+          <strong>Contract</strong>: It's necessary to
           provide the services you've requested
         </li>
       </ul>
 
-      <h3
-        class="text-xl font-bold tracking-tight text-white md:text-2xl pt-12 pb-4"
-      >
-        How We Protect Your Information<span class="text-warning">.</span>
-      </h3>
+      <h2>How we protect your information</h2>
       <p>
         We store your email address securely on servers within the European
         Union, using encryption and access controls to prevent unauthorized
@@ -88,7 +80,7 @@ import Layout from "../layouts/Layout.astro";
         backups or service providers), we'll ensure safeguards like standard
         contractual clauses are in place to protect it, as required by GDPR.
       </p>
-      <p class="mt-4">
+      <p>
         We keep your data only as long as necessary to provide the services
         you've requested or as required by law. Once you delete your account or
         no longer use our services, we retain your email address for a short
@@ -96,13 +88,9 @@ import Layout from "../layouts/Layout.astro";
         it.
       </p>
 
-      <h3
-        class="text-xl font-bold tracking-tight text-white md:text-2xl pt-12 pb-4"
-      >
-        Sharing Your Information<span class="text-warning">.</span>
-      </h3>
+      <h2>Sharing your information</h2>
       <p>We do not share your information with third parties, except:</p>
-      <ul class="list-disc ml-6 mt-2">
+      <ul>
         <li>
           When legally required (e.g., by a court order or regulation)
         </li>
@@ -112,86 +100,73 @@ import Layout from "../layouts/Layout.astro";
         </li>
       </ul>
 
-      <h3
-        class="text-xl font-bold tracking-tight text-white md:text-2xl pt-12 pb-4"
-      >
-        Your Rights<span class="text-warning">.</span>
-      </h3>
+      <h2>Your rights</h2>
       <p>You have control over your data. Under GDPR, you can:</p>
-      <ul class="list-disc ml-6 mt-2">
+      <ul>
         <li>
-          <strong class="text-warning">Access</strong>: Request a copy of your
+          <strong>Access</strong>: Request a copy of your
           data
         </li>
         <li>
-          <strong class="text-warning">Correct</strong>: Update inaccurate
+          <strong>Correct</strong>: Update inaccurate
           information
         </li>
         <li>
-          <strong class="text-warning">Delete</strong>: Remove your data from
+          <strong>Delete</strong>: Remove your data from
           our servers
         </li>
         <li>
-          <strong class="text-warning">Restrict</strong>: Limit how we use your
+          <strong>Restrict</strong>: Limit how we use your
           data
         </li>
         <li>
-          <strong class="text-warning">Portability</strong>: Get your data in a
+          <strong>Portability</strong>: Get your data in a
           usable format
         </li>
         <li>
-          <strong class="text-warning">Object</strong>: Stop processing (e.g.,
+          <strong>Object</strong>: Stop processing (e.g.,
           for marketing)
         </li>
       </ul>
-      <p class="mt-4">
+      <p>
         To exercise these rights or withdraw consent, use the deletion option in
         our products or contact us.
       </p>
-      <p class="mt-4">
+      <p>
         If you're unhappy with how we handle your data, you have the right to
         lodge a complaint with your local supervisory authority (e.g., in
         Hungary, the National Authority for Data Protection and Freedom of
         Information –
-        <a href="https://www.naih.hu/" class="text-warning hover:underline"
+        <a href="https://www.naih.hu/" class={link}
           >NAIH</a
         >).
       </p>
 
-      <h3
-        class="text-xl font-bold tracking-tight text-white md:text-2xl pt-12 pb-4"
-      >
-        Contact Us<span class="text-warning">.</span>
-      </h3>
+      <h2>Contact us</h2>
       <p>Questions about data handling? Reach out to us:</p>
-      <ul class="list-none mt-2">
+      <ul class="!list-none !pl-0">
         <li>
-          <strong class="text-warning">Email</strong>: security [(at])
+          <strong>Email</strong>: security [(at])
           coollabs.io
         </li>
         <li>
-          <strong class="text-warning">More Info</strong>:
+          <strong>More Info</strong>:
           <a
             href="https://coolify.io/docs/contact"
-            class="text-warning hover:underline">https://coolify.io/docs/contact</a
+            class={link}>https://coolify.io/docs/contact</a
           >
         </li>
       </ul>
 
-      <h3
-        class="text-xl font-bold tracking-tight text-white md:text-2xl pt-12 pb-4"
-      >
-        Changes to This Policy<span class="text-warning">.</span>
-      </h3>
+      <h2>Changes to this policy</h2>
       <p>
         If we update this policy, we'll post the new version on our websites
         (coollabs.io, coolify.io, images.coollabs.io, safetyper.com, etc.) and
         notify you via email or within our products. Continued use of our
         services means you accept the updated policy.
       </p>
-      <p class="mt-8">
+      <p class="!mt-12 border-t border-hairline pt-6 text-fg-faint">
         By using our products, you agree to this Privacy Policy.
       </p>
-    </div>
-  </div>
+  </article>
 </Layout>

@@ -7,10 +7,10 @@
       "dependencies": {
         "@astrojs/sitemap": "3.7.4",
         "@astrojs/svelte": "9.0.1",
-        "@phosphor-icons/web": "^2.1.2",
         "@tailwindcss/vite": "^4.3.3",
         "astro": "7.3.2",
         "postcss": "^8.5.28",
+        "reicon": "^1.2.5",
         "svelte": "^5.57.0",
         "tailwindcss": "^4.3.3",
         "typescript": "^5.9.3",
@@ -217,8 +217,6 @@
     "@oslojs/encoding": ["@oslojs/encoding@1.1.0", "", {}, "sha512-70wQhgYmndg4GCPxPPxPGevRKqTIJ2Nh4OkiMWmDAVYsTQ+Ta7Sq+rPevXyXGdzr30/qZBnyOalCszoMxlyldQ=="],
 
     "@oxc-project/types": ["@oxc-project/types@0.149.0", "", {}, "sha512-Efcc+iF0j3Bf67YjEqIqWXbX5XddXoK/Mw4K1/JuXwRCZ8N16VR7iT23nlCc9XrveFVh/E5Rqs2StT0V8v9LdA=="],
-
-    "@phosphor-icons/web": ["@phosphor-icons/web@2.1.2", "", {}, "sha512-rPAR9o/bEcp4Cw4DEeZHXf+nlGCMNGkNDRizYHM47NLxz9vvEHp/Tt6FMK1NcWadzw/pFDPnRBGi/ofRya958A=="],
 
     "@rolldown/binding-android-arm-eabi": ["@rolldown/binding-android-arm-eabi@1.2.8", "", { "os": "android", "cpu": "arm" }, "sha512-tN5aztYkKCte4i5SIrrz5yK/HMjEuCqCSCJa418jOV8tZ1cBY3YF2otxB1ktPxzsLA1BeTqwapK0bfjxNvHJVw=="],
 
@@ -571,6 +569,8 @@
     "regex-recursion": ["regex-recursion@6.0.2", "", { "dependencies": { "regex-utilities": "^2.3.0" } }, "sha512-0YCaSCq2VRIebiaUviZNs0cBz1kg5kVS2UKUfNIx8YVs1cN3AV7NTctO5FOKBA+UT2BPJIWZauYHPqJODG50cg=="],
 
     "regex-utilities": ["regex-utilities@2.3.0", "", {}, "sha512-8VhliFJAWRaUiVvREIiW2NXXTmHs4vMNnSzuJVhscgmGav3g9VDxLrQndI3dZZVVdp0ZO/5v0xmX516/7M9cng=="],
+
+    "reicon": ["reicon@1.2.5", "", {}, "sha512-2I7zqhdNftyIO4FFv8Txy168gFIvy5qOO56zHlLNl1cyBmt6fy41LM8k+566epgcJN2pJd1Wk9TA+CXUZszUNA=="],
 
     "resolve-pkg-maps": ["resolve-pkg-maps@1.0.0", "", {}, "sha512-seS2Tj26TBVOC2NIc2rOe2y2ZO7efxITtLZcGSOnHHNOQ7CkiUBfw0Iw2ck6xkIhPwLhKNLS8BO+hEpngQlqzw=="],
 

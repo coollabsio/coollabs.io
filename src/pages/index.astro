@@ -1,165 +1,189 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import BigSponsors from "./big-sponsors.astro";
+import Icon from "../components/Icon.astro";
+import ScreenshotGallery from "../components/ScreenshotGallery.astro";
+import { featured, more } from "../data/projects.js";
+import ArrowRight from "reicon/icons/ArrowRight";
+import ArrowUpRight from "reicon/icons/ArrowUpRight";
+import Bug from "reicon/icons/Bug";
+import Ghost from "reicon/icons/Ghost";
+import HeartHand from "reicon/icons/HeartHand";
+import Maximize from "reicon/icons/Maximize";
+import Store from "reicon/icons/Store";
+
+const icons = { bug: Bug, ghost: Ghost };
 ---
 
-<Layout title="coolLabs">
-  <h1 class="text-3xl font-bold tracking-tight text-white md:text-6xl px-4">
-    Software without compromise<span class="text-warning">.</span>
-  </h1>
-  <h2 class="text-base pt-2 text-neutral-400 px-4">
-    Free, open source, and built for you. <i class="ph-duotone ph-heart text-pink-500 text-xl inline-block -mt-0.5" aria-hidden="true"></i>
-  </h2>
-  <div class="pb-10 pt-3 flex justify-center">
+<Layout title="coolLabs - Software without compromise">
+  <section class="px-4">
     <a
-      class="text-white hover:underline flex gap-2 items-center text-xs transition-colors"
-      target="_blank"
-      href="https://twitch.tv/heyandras"
+      href="/philosophy"
+      class="inline-flex items-center gap-2 rounded-full bg-white/[0.04] px-3 py-1 text-xs text-fg-dim ring-1 ring-hairline transition-colors hover:bg-white/[0.07] hover:text-fg"
     >
-      <i class="ph-duotone ph-twitch-logo text-purple-500 text-base" aria-hidden="true"></i>
-      Building them in live-streams</a
-    >
-  </div>
-
-  <div class="max-w-4xl mx-auto w-full px-4 text-left">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pb-8">
-      <a
-        href="https://coolify.io?ref=coollabs"
-        class="group block p-5 rounded-xl bg-coolgray-200 border border-coolgray-400 hover:border-[oklch(87.90%_0.1533_91.61/0.4)] transition-colors"
-      >
-        <div class="flex items-baseline justify-between gap-4 mb-1">
-          <h3
-            class="text-xl font-bold text-white group-hover:text-warning transition-colors"
-          >
-            Coolify
-          </h3>
-          <i class="ph-duotone ph-arrow-up-right text-neutral-600 group-hover:text-warning transition-colors flex-shrink-0 text-base translate-y-0.5" aria-hidden="true"></i>
-        </div>
-        <p class="text-sm text-neutral-400 mb-2">
-          Self-hosting with superpowers. An open-source & self-hostable Heroku /
-          Netlify / Vercel alternative.
-        </p>
-        <span class="text-xs text-neutral-500">
-          <span class="text-warning opacity-80">Thousands</span> of cloud users &middot; <span
-            class="text-warning opacity-80">hundreds of thousands</span
-          > of self-hosted instances
-        </span>
+      <span class="size-1.5 rounded-full bg-warning"></span>
+      Free, open source, no investors. Read our philosophy
+      <Icon icon={ArrowRight} class="size-3.5" />
+    </a>
+    <h1 class="mx-auto mt-6 max-w-3xl text-4xl font-semibold tracking-tight text-balance text-fg md:text-6xl">
+      Software without compromise<span class="text-warning">.</span>
+    </h1>
+    <p class="mx-auto mt-5 max-w-xl text-base text-pretty text-fg-dim md:text-lg">
+      We build open-source tools for developers: self-hosting, AI agents, social
+      publishing and more. Free, open source, and built for you.
+    </p>
+    <div class="mt-8 flex flex-wrap justify-center gap-3">
+      <a href="#projects" class="btn btn-primary btn-lg">
+        See our projects
+        <Icon icon={ArrowRight} class="size-4" />
       </a>
-
-      <a
-        href="https://jean.build?ref=coollabs"
-        class="group block p-5 rounded-xl bg-coolgray-200 border border-coolgray-400 hover:border-[oklch(87.90%_0.1533_91.61/0.4)] transition-colors"
-      >
-        <div class="flex items-baseline justify-between gap-4 mb-1">
-          <h3
-            class="text-xl font-bold text-white group-hover:text-warning transition-colors"
-          >
-            Jean
-          </h3>
-          <i class="ph-duotone ph-arrow-up-right text-neutral-600 group-hover:text-warning transition-colors flex-shrink-0 text-base translate-y-0.5" aria-hidden="true"></i>
-        </div>
-        <p class="text-sm text-neutral-400 mb-2">
-          A dev environment for AI agents. Run AI agents in parallel, in isolated
-          workspaces with Claude Code, Codex & OpenCode. Open source and free forever.
-        </p>
-      </a>
-
-      <a
-        href="https://shoutrrr.com?ref=coollabs"
-        class="group block p-5 rounded-xl bg-coolgray-200 border border-coolgray-400 hover:border-[oklch(87.90%_0.1533_91.61/0.4)] transition-colors"
-      >
-        <div class="flex items-baseline justify-between gap-4 mb-1">
-          <div class="flex items-center gap-2">
-            <h3
-              class="text-xl font-bold text-white group-hover:text-warning transition-colors"
-            >
-              Shoutrrr
-            </h3>
-            <span
-              class="text-[10px] font-semibold uppercase tracking-wider bg-[oklch(87.90%_0.1533_91.61/0.15)] text-warning px-2 py-0.5 rounded-full"
-              >New</span
-            >
-          </div>
-          <i class="ph-duotone ph-arrow-up-right text-neutral-600 group-hover:text-warning transition-colors flex-shrink-0 text-base translate-y-0.5" aria-hidden="true"></i>
-        </div>
-        <p class="text-sm text-neutral-400">
-          The open-source alternative to Buffer, Typefully &amp; Hootsuite. Draft
-          once, post everywhere.
-        </p>
-      </a>
-
-      <a
-        href="https://fonts.coollabs.io?ref=coollabs"
-        class="group block p-5 rounded-xl bg-coolgray-200 border border-coolgray-400 hover:border-[oklch(87.90%_0.1533_91.61/0.4)] transition-colors"
-      >
-        <div class="flex items-baseline justify-between gap-4 mb-1">
-          <h3
-            class="text-xl font-bold text-white group-hover:text-warning transition-colors"
-          >
-            Fonts
-          </h3>
-          <i class="ph-duotone ph-arrow-up-right text-neutral-600 group-hover:text-warning transition-colors flex-shrink-0 text-base translate-y-0.5" aria-hidden="true"></i>
-        </div>
-        <p class="text-sm text-neutral-400 mb-2">
-          A privacy-friendly drop-in replacement for Google Fonts.
-        </p>
-        <span class="text-xs text-neutral-500">
-          <span class="text-warning opacity-80">{(7).toLocaleString()}+</span> million requests
-          per month
-        </span>
-      </a>
-
-      <a
-        href="https://serverlesshorrors.com?ref=coollabs"
-        class="group block p-5 rounded-xl bg-coolgray-200 border border-coolgray-400 hover:border-[oklch(87.90%_0.1533_91.61/0.4)] transition-colors"
-      >
-        <div class="flex items-baseline justify-between gap-4 mb-1">
-          <h3
-            class="text-xl font-bold text-white group-hover:text-warning transition-colors"
-          >
-            Serverless Horrors
-          </h3>
-          <i class="ph-duotone ph-arrow-up-right text-neutral-600 group-hover:text-warning transition-colors flex-shrink-0 text-base translate-y-0.5" aria-hidden="true"></i>
-        </div>
-        <p class="text-sm text-neutral-400">
-          A simple blog where you can read all the horror stories of serverless.
-        </p>
-      </a>
-
-      <a
-        href="https://llmhorrors.com?ref=coollabs"
-        class="group block p-5 rounded-xl bg-coolgray-200 border border-coolgray-400 hover:border-[oklch(87.90%_0.1533_91.61/0.4)] transition-colors"
-      >
-        <div class="flex items-baseline justify-between gap-4 mb-1">
-          <h3
-            class="text-xl font-bold text-white group-hover:text-warning transition-colors"
-          >
-            LLM Horrors
-          </h3>
-          <i class="ph-duotone ph-arrow-up-right text-neutral-600 group-hover:text-warning transition-colors flex-shrink-0 text-base translate-y-0.5" aria-hidden="true"></i>
-        </div>
-        <p class="text-sm text-neutral-400">
-          A simple blog where you can read all the horror stories of LLMs.
-        </p>
+      <a href="/sponsorships" class="btn btn-neutral btn-lg">
+        <Icon icon={HeartHand} class="size-4 text-pink-400" />
+        Sponsor us
       </a>
     </div>
-  </div>
+    <div class="mt-6 flex flex-wrap justify-center gap-x-5 gap-y-2 text-xs text-fg-faint">
+      <a class="inline-flex items-center gap-1.5 transition-colors hover:text-fg" target="_blank" href="https://twitch.tv/heyandras">
+        <svg class="size-3.5 text-[#a970ff]" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M11.571 4.714h1.715v5.143H11.57zm4.715 0H18v5.143h-1.714zM6 0L1.714 4.286v15.428h5.143V24l4.286-4.286h3.428L22.286 12V0zm14.571 11.143l-3.428 3.428h-3.429l-3 3v-3H6.857V1.714h13.714z"></path>
+        </svg>
+        Building them in live streams
+      </a>
+      <a class="transition-colors hover:text-fg" href="https://github.com/coollabsio">GitHub</a>
+      <a class="transition-colors hover:text-fg" href="https://shop.coollabs.io?utm_source=coollabs">Merch</a>
+    </div>
+  </section>
 
-  <script>
-    fetch("https://cdn.coollabs.io/business.json")
-      .then((res) => res.json())
-      .then((data) => {
-        const cloudUsersEl = document.getElementById("cloud-users");
-        if (cloudUsersEl && data["coolify-cloud-users"]) {
-          cloudUsersEl.textContent =
-            data["coolify-cloud-users"].toLocaleString();
-        }
-      })
-      .catch(() => {
-        const cloudUsersEl = document.getElementById("cloud-users");
-        if (cloudUsersEl) {
-          cloudUsersEl.textContent = "2,800";
-        }
-      });
-  </script>
+  <section id="projects" class="mt-24 scroll-mt-20 px-4">
+    <p class="eyebrow">Projects</p>
+    <h2 class="mt-2 text-2xl font-semibold tracking-tight text-fg md:text-3xl">
+      What we are building
+    </h2>
+    <p class="mx-auto mt-3 max-w-xl text-sm text-fg-faint">
+      Every project is open source. Click a screenshot to see more.
+    </p>
+
+    <div class="mt-10 grid gap-4 text-left lg:grid-cols-2">
+      {
+        featured.map((project) => (
+          <article
+            class="relative flex flex-col overflow-hidden rounded-xl bg-white/[0.03] p-5 ring-1 ring-(--brand)/35"
+            style={`--brand: ${project.brand}; --brand-text: ${project.brandText};`}
+          >
+            <div class="pointer-events-none absolute inset-x-0 -top-32 h-56 bg-[radial-gradient(closest-side,var(--brand),transparent)] opacity-30 blur-2xl" />
+            <div class="relative flex items-start gap-4">
+              <div class="flex size-11 shrink-0 items-center justify-center rounded-lg bg-(--brand)/15 ring-1 ring-(--brand)/40">
+                <img src={project.logo} alt="" class="size-7" />
+              </div>
+              <div class="min-w-0 flex-1">
+                <h3 class="text-lg leading-tight font-semibold tracking-tight text-fg">
+                  <a href={project.href} class="hover:underline hover:decoration-(--brand-text) hover:underline-offset-4">{project.name}</a>
+                </h3>
+                <p class="mt-0.5 text-sm font-medium text-(--brand-text)">{project.tagline}</p>
+              </div>
+              <a
+                href={project.href}
+                class="hidden shrink-0 items-center gap-1 rounded-md px-2 py-1 text-xs text-fg-dim ring-1 ring-hairline transition-colors hover:text-(--brand-text) hover:ring-(--brand)/50 sm:inline-flex"
+              >
+                {project.domain}
+                <Icon icon={ArrowUpRight} class="size-3.5" />
+              </a>
+            </div>
+            <p class="relative mt-4 text-sm text-fg-dim">{project.description}</p>
+            <div class="relative mt-4 flex flex-wrap gap-x-6 gap-y-1 text-xs text-fg-faint">
+              {project.stats.map((stat) => (
+                <span>
+                  <span class="font-medium text-(--brand-text)">{stat.value}</span> {stat.label}
+                </span>
+              ))}
+            </div>
+            <button
+              type="button"
+              data-gallery-open={project.start}
+              class="group relative mt-5 block w-full cursor-zoom-in rounded-lg bg-white/[0.03] p-1 ring-1 ring-hairline transition-shadow hover:ring-(--brand)/60 focus-visible:outline-1 focus-visible:outline-offset-2 focus-visible:outline-warning"
+            >
+              <img
+                src={project.screenshots[0].src}
+                alt={project.screenshots[0].alt}
+                width="2880"
+                height="1800"
+                loading="lazy"
+                class="w-full rounded-md"
+              />
+              <span class="absolute right-3 bottom-3 inline-flex items-center gap-1.5 rounded-full bg-app/80 px-3 py-1.5 text-xs font-medium text-fg ring-1 ring-hairline backdrop-blur transition-colors group-hover:bg-app">
+                <Icon icon={Maximize} class="size-3.5" />
+                {project.screenshots.length} screenshots
+              </span>
+            </button>
+          </article>
+        ))
+      }
+    </div>
+
+    <div class="mt-4 grid gap-4 text-left sm:grid-cols-2 lg:grid-cols-4">
+      {
+        more.map((project) => (
+          <article class="card group flex flex-col overflow-hidden">
+            <button
+              type="button"
+              data-gallery-open={project.start}
+              aria-label={`View ${project.name} screenshot`}
+              class="block cursor-zoom-in overflow-hidden border-b border-hairline focus-visible:outline-1 focus-visible:-outline-offset-2 focus-visible:outline-warning"
+            >
+              <img
+                src={project.screenshots[0].src}
+                alt={project.screenshots[0].alt}
+                loading="lazy"
+                class="aspect-[16/10] w-full object-cover object-top opacity-80 transition-opacity group-hover:opacity-100"
+              />
+            </button>
+            <a href={project.href} class="flex flex-1 flex-col p-4">
+              <div class="flex items-center gap-3">
+                <div class="flex size-8 shrink-0 items-center justify-center rounded-md bg-white/[0.06] ring-1 ring-hairline">
+                  {project.logo ? (
+                    <img src={project.logo} alt="" class="size-5" />
+                  ) : (
+                    <Icon icon={icons[project.icon]} class="size-4 text-fg-dim" />
+                  )}
+                </div>
+                <h3 class="flex min-w-0 flex-1 items-center gap-2 text-sm font-medium text-fg">
+                  {project.name}
+                  {project.badge && (
+                    <span class="rounded-full bg-warning/15 px-1.5 py-px text-[10px] font-semibold tracking-wider text-warning uppercase">
+                      {project.badge}
+                    </span>
+                  )}
+                </h3>
+                <Icon icon={ArrowUpRight} class="size-4 shrink-0 text-fg-faint transition-colors group-hover:text-fg" />
+              </div>
+              <p class="mt-3 text-[13px] leading-5 text-fg-faint">{project.description}</p>
+              {project.stat && <p class="mt-auto pt-3 text-xs text-fg-dim">{project.stat}</p>}
+            </a>
+          </article>
+        ))
+      }
+    </div>
+  </section>
+
+  <section id="support" class="mt-28 scroll-mt-20 px-4">
+    <p class="eyebrow">Support</p>
+    <h2 class="mt-2 text-2xl font-semibold tracking-tight text-fg md:text-3xl">
+      Free because of our sponsors
+    </h2>
+    <p class="mx-auto mt-3 max-w-xl text-sm text-fg-faint">
+      No paywalled features and no investors. Sponsors, Cloud customers and merch
+      buyers keep every project independent and open source.
+    </p>
+    <div class="mt-6 flex flex-wrap justify-center gap-3">
+      <a href="/sponsorships" class="btn btn-primary">
+        <Icon icon={HeartHand} class="size-4" />
+        Become a sponsor
+      </a>
+      <a href="https://shop.coollabs.io?utm_source=coollabs" class="btn btn-neutral">
+        <Icon icon={Store} class="size-4" />
+        Get some merch
+      </a>
+    </div>
+  </section>
+
+  <ScreenshotGallery />
 </Layout>

@@ -22,10 +22,10 @@
   "dependencies": {
     "@astrojs/sitemap": "3.7.4",
     "@astrojs/svelte": "9.0.1",
-    "@phosphor-icons/web": "^2.1.2",
     "@tailwindcss/vite": "^4.3.3",
     "astro": "7.3.2",
     "postcss": "^8.5.28",
+    "reicon": "^1.2.5",
     "svelte": "^5.57.0",
     "tailwindcss": "^4.3.3",
     "typescript": "^5.9.3"
