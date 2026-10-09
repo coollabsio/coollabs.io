@@ -71,24 +71,73 @@ export const featured = [
       },
     ],
   },
-];
-
-export const more = [
   {
     name: "Shoutrrr",
     href: "https://shoutrrr.com?ref=coollabs",
+    domain: "shoutrrr.com",
     logo: "/images/projects/shoutrrr.svg",
-    badge: "New",
-    description: "The open-source alternative to Buffer, Typefully and Hootsuite. Draft once, post everywhere.",
+    brand: "oklch(76.8% 0.233 130.85)",
+    brandText: "oklch(84.1% 0.238 128.85)",
+    tagline: "Draft once, post everywhere.",
+    description:
+      "The open-source alternative to Buffer, Typefully and Hootsuite. Publish to X, LinkedIn, Bluesky and Discord from one editor, or let your AI agent do it.",
+    stats: [
+      { value: "New", label: "and open source" },
+      { value: "MCP + REST API", label: "included" },
+    ],
     screenshots: [
       {
         src: "/images/screenshots/shoutrrr.webp",
         title: "Draft once, post everywhere",
-        text: "Publish to X, LinkedIn, Bluesky and Discord from one editor, or let your AI agent do it with the built-in MCP server.",
+        text: "Publish to X, LinkedIn, Bluesky and Discord from one editor, with a live per-network character count.",
         alt: "Shoutrrr homepage with the post editor and per-network character counts",
+      },
+      {
+        src: "/images/screenshots/shoutrrr-showcase.webp",
+        title: "One fast interface",
+        text: "Compose, queue, reply and measure without leaving the app, and see how every post lands on each network.",
+        alt: "Shoutrrr composer with a thread and a preview of how it looks on X",
+      },
+      {
+        src: "/images/screenshots/shoutrrr-developers.webp",
+        title: "Drive it from your agent or your code",
+        text: "Every plan includes an MCP server and a REST API, with no developer tier and no per-call fee.",
+        alt: "Shoutrrr MCP server and REST API cards",
       },
     ],
   },
+  {
+    name: "Safetyper",
+    href: "https://safetyper.com?ref=coollabs",
+    domain: "safetyper.com",
+    logo: "/images/projects/safetyper.png",
+    brand: "oklch(62.7% 0.194 149.21)",
+    brandText: "oklch(79.2% 0.209 151.71)",
+    tagline: "Keep your words safe and polished.",
+    description:
+      "A Grammarly alternative, where you own what you type. A browser extension with your own API key or a local Ollama model.",
+    stats: [
+      { value: "Chrome", label: "and Firefox" },
+      { value: "Local models", label: "with Ollama" },
+    ],
+    screenshots: [
+      {
+        src: "/images/screenshots/safetyper.webp",
+        title: "Keep your words safe and polished",
+        text: "Grammar and spelling on any website, from a browser extension for Chrome and Firefox.",
+        alt: "Safetyper homepage with Add to Chrome and Add to Firefox buttons",
+      },
+      {
+        src: "/images/screenshots/safetyper-features.webp",
+        title: "Better writing, without giving up your privacy",
+        text: "Bring your own OpenRouter or Groq key, or run models locally with Ollama. Your text stays yours.",
+        alt: "Safetyper features: bring your own key, local Ollama models, works everywhere, grammar and open source",
+      },
+    ],
+  },
+];
+
+export const more = [
   {
     name: "Fonts",
     href: "https://fonts.coollabs.io?ref=coollabs",
