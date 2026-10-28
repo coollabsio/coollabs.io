@@ -60,8 +60,8 @@ export const featured = [
       {
         src: "/images/screenshots/jean-recent-sessions.webp",
         title: "Parallel agents",
-        text: "Every session across all projects in one list, with running agents marked. Open several sessions side by side.",
-        alt: "Jean Recent tab with sessions from many projects, next to an open session with an agent recap",
+        text: "Run several sessions side by side in one worktree. Every finished turn ends with a recap.",
+        alt: "Jean session with an agent recap table, next to a second session tab",
       },
       {
         src: "/images/screenshots/jean-diff-review.webp",
