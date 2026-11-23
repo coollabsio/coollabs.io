@@ -37,41 +37,6 @@ export const featured = [
     ],
   },
   {
-    name: "Jean",
-    href: "https://jean.build?ref=coollabs",
-    domain: "jean.build",
-    logo: "/images/projects/jean.png",
-    brand: "var(--color-jean)",
-    brandText: "var(--color-jean)",
-    tagline: "A dev environment for AI agents.",
-    description:
-      "Run AI agents in parallel, in isolated worktrees, with Claude Code, Codex and OpenCode. Review every change before you ship it.",
-    stats: [
-      { value: "Open source", label: "and free forever" },
-      { value: "Desktop, server", label: "and web access" },
-    ],
-    screenshots: [
-      {
-        src: "/images/screenshots/jean-worktrees.webp",
-        title: "Every task in its own worktree",
-        text: "One project, many isolated worktrees: issues, pull requests and manual tasks, with diff size, PR status and labels.",
-        alt: "Jean project view listing worktrees with linked pull requests, diff stats and labels",
-      },
-      {
-        src: "/images/screenshots/jean-recent-sessions.webp",
-        title: "Parallel agents",
-        text: "Run several sessions side by side in one worktree. Every finished turn ends with a recap.",
-        alt: "Jean session with an agent recap table, next to a second session tab",
-      },
-      {
-        src: "/images/screenshots/jean-diff-review.webp",
-        title: "Review every change",
-        text: "Uncommitted, branch, commit and checkpoint diffs in split or stacked view. Click line numbers to comment.",
-        alt: "Jean diff viewer with a file list and a split diff of a PHP file",
-      },
-    ],
-  },
-  {
     name: "Orbit",
     href: "https://orbit.so?ref=coollabs",
     domain: "orbit.so",
@@ -103,6 +68,41 @@ export const featured = [
         title: "Talk next to the work",
         text: "Channels, direct messages and threads, with files, code blocks, reactions and search.",
         alt: "Orbit chat channel with messages, a code block, reactions and a thread",
+      },
+    ],
+  },
+  {
+    name: "Jean",
+    href: "https://jean.build?ref=coollabs",
+    domain: "jean.build",
+    logo: "/images/projects/jean.png",
+    brand: "var(--color-jean)",
+    brandText: "var(--color-jean)",
+    tagline: "A dev environment for AI agents.",
+    description:
+      "Run AI agents in parallel, in isolated worktrees, with Claude Code, Codex and OpenCode. Review every change before you ship it.",
+    stats: [
+      { value: "Open source", label: "and free forever" },
+      { value: "Desktop, server", label: "and web access" },
+    ],
+    screenshots: [
+      {
+        src: "/images/screenshots/jean-worktrees.webp",
+        title: "Every task in its own worktree",
+        text: "One project, many isolated worktrees: issues, pull requests and manual tasks, with diff size, PR status and labels.",
+        alt: "Jean project view listing worktrees with linked pull requests, diff stats and labels",
+      },
+      {
+        src: "/images/screenshots/jean-recent-sessions.webp",
+        title: "Parallel agents",
+        text: "Run several sessions side by side in one worktree. Every finished turn ends with a recap.",
+        alt: "Jean session with an agent recap table, next to a second session tab",
+      },
+      {
+        src: "/images/screenshots/jean-diff-review.webp",
+        title: "Review every change",
+        text: "Uncommitted, branch, commit and checkpoint diffs in split or stacked view. Click line numbers to comment.",
+        alt: "Jean diff viewer with a file list and a split diff of a PHP file",
       },
     ],
   },
