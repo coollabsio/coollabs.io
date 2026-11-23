@@ -72,6 +72,41 @@ export const featured = [
     ],
   },
   {
+    name: "Orbit",
+    href: "https://orbit.so?ref=coollabs",
+    domain: "orbit.so",
+    logo: "/images/projects/orbit.svg",
+    brand: "#f2458f",
+    brandText: "#ff8ac0",
+    tagline: "Your team's work, in one orbit.",
+    description:
+      "An open-source workspace for teams with tasks, docs and chat. The best parts of Linear, Notion and Slack in one place.",
+    stats: [
+      { value: "Self-host", label: "for free" },
+      { value: "Orbit Cloud", label: "with unlimited members" },
+    ],
+    screenshots: [
+      {
+        src: "/images/screenshots/orbit-tasks.webp",
+        title: "Plan and track the work",
+        text: "Projects with their own workflows. Switch between list, board and timeline, and keep issues from GitHub in sync.",
+        alt: "Orbit task board with Backlog, Todo, In Progress and Done columns across several projects",
+      },
+      {
+        src: "/images/screenshots/orbit-docs.webp",
+        title: "Write it down, find it later",
+        text: "A page tree with teamspaces and favorites. Write together in real time in a rich editor.",
+        alt: "Orbit docs page with a page tree in the sidebar and a welcome page with checklists and a table",
+      },
+      {
+        src: "/images/screenshots/orbit-chat.webp",
+        title: "Talk next to the work",
+        text: "Channels, direct messages and threads, with files, code blocks, reactions and search.",
+        alt: "Orbit chat channel with messages, a code block, reactions and a thread",
+      },
+    ],
+  },
+  {
     name: "Shoutrrr",
     href: "https://shoutrrr.com?ref=coollabs",
     domain: "shoutrrr.com",
